@@ -13,7 +13,7 @@ from model.fooditems import initfooditem
 from api.covid import covid_api # Blueprint import api definition
 from api.joke import joke_api # Blueprint import api definition
 from api.user import user_api # Blueprint import api definition
-from api.foods import foods_api
+from api.foods import food_api
 
 # setup App pages
 from projects.projects import app_projects # Blueprint directory import projects definition
@@ -23,7 +23,7 @@ app.register_blueprint(joke_api) # register api routes
 app.register_blueprint(covid_api) # register api routes
 app.register_blueprint(user_api) # register api routes
 app.register_blueprint(app_projects) # register app pages
-app.register_blueprint(foods_api)
+app.register_blueprint(food_api)
 
 @app.errorhandler(404)  # catch for URL not found
 def page_not_found(e):
