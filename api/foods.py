@@ -8,7 +8,7 @@ food_api = Blueprint('food_api', __name__,
                    url_prefix='/api/foods')
 
 # API docs https://flask-restful.readthedocs.io/en/latest/api.html
-api = Api(food_api)
+api = Api(foods_api)
 
 class foodAPI:        
     class _Create(Resource):
